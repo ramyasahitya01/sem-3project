@@ -1,0 +1,170 @@
+/* body
+{
+   background-image: url('photography.jpg');
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.card
+{
+  position: absolute;
+  left : 800px;
+  top : 150px;
+  border-radius: 25px x 25px;
+}
+
+
+#button-try{
+    color : black;
+    background-color: green;
+    border-radius: 25px;
+}
+
+
+#button-try1{
+    color : black;
+    background-color: white;
+    border-radius: 25px;
+} */
+/* body
+{
+   background-image: url('photography.jpg');
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.card
+{
+  position: absolute;
+  left : 800px;
+  top : 150px;
+  border-radius: 25px x 25px;
+}
+
+
+#button-try{
+    color : black;
+    background-color: green;
+    border-radius: 25px;
+}
+
+
+#button-try1{
+    color : black;
+    background-color: white;
+    border-radius: 25px;
+} */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bg {
+    background-image: url("photography.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=file],input[type=submit],select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0px;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: #4CAF50;
+    color: pink;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+    width:30%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height:100%;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    height: 25%;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    height:50%;
+    border-radius: 50px;
+    position:absolute;
+    left : 55%;
+    top : 20%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    cursor: inherit;
+    display: block;
+    color: green;
+}
